@@ -45,6 +45,7 @@ erDiagram
         string type "student OR alumni"
         string student_id "only if student"
         number year "only if student"
+        number expect_grad_year "only if student"
         string id_number "only if alumni"
         number grad_year "only if alumni"
     }
@@ -112,6 +113,7 @@ erDiagram
         // Student-only
         "student_id": "string",
         "year": "number",
+        "expect_grad_year": "number",
 
         // Alumni-only
         "id_number": "string",
