@@ -249,5 +249,7 @@ erDiagram
     APPOINTMENT ||--o| MENTOR_FEEDBACK : "embeds"
 ```
 
+
 ### Consideration
 - Quota system >> Need ref due to frequent update?
+- feedback has 3 points (ref from Figma)
