@@ -9,6 +9,7 @@ erDiagram
         string _id PK
         string email UK "unique index"
         string password_hash
+        string role "mentor, mentee, admin, superadmin"
         string phone_number
         string profile_image
         datetime created_at
@@ -18,17 +19,16 @@ erDiagram
     LINE {
         string user_id UK "LINE user ID"
         string user_name
-        string profile_image
     }
 
     NAME {
         string prefix "Mr., Ms."
-        string fullname_th "user input (source)"
-        string first_th "extracted from fullname_th"
-        string last_th "extracted from fullname_th"
-        string fullname_en "user input (source)"
-        string first_en "extracted from fullname_en"
-        string last_en "extracted from fullname_en"
+        string fullname_th "user input"
+        string first_th "extracted from fullname_th ?"
+        string last_th "extracted from fullname_th ?"
+        string fullname_en "user input"
+        string first_en "extracted from fullname_en ?"
+        string last_en "extracted from fullname_en ?"
         string nickname_th
         string nickname_en
     }
@@ -56,8 +56,8 @@ erDiagram
 
     USER ||--|| LINE : "embeds"
     USER ||--|| NAME : "embeds"
-    USER ||--|| ACADEMIC_INFO : "embeds"
-    USER ||--|| MENTEE_STATUS : "embeds"
+    USER ||--o| ACADEMIC_INFO : "embeds (mentee only)"
+    USER ||--o| MENTEE_STATUS : "embeds (mentee only)"
     ACADEMIC_INFO ||--o{ ATTACHMENT : "embeds"
 ```
 
@@ -66,12 +66,12 @@ erDiagram
     // Authentication
     "email": "string",
     "password_hash": "string",
+    "role": "string",
 
     // LINE Integration
     "line": {
         "user_id": "string",
         "user_name": "string",
-        "profile_image": "string"
     },
 
     // Personal Information
