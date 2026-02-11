@@ -12,6 +12,8 @@ erDiagram
         string role "mentor, mentee, admin, superadmin"
         string phone_number
         string profile_image
+        string line_id
+        string status
         datetime created_at
         datetime updated_at
     }
@@ -67,6 +69,7 @@ erDiagram
     "email": "string",
     "password_hash": "string",
     "role": "string",
+    "status": "string",
 
     // LINE Integration
     "line": {
@@ -86,6 +89,7 @@ erDiagram
     },
 
     "phone_number": "string",
+    "line_id": "string",
     "profile_image": "string",
 
     // Academic Information
