@@ -245,8 +245,8 @@ erDiagram
 
     SESSION ||--|{ MENTOR_SELECTION : "embeds"
     SESSION ||--o{ APPOINTMENT : "embeds"
-    APPOINTMENT ||--o| MENTEE_FEEDBACK : "embeds"
-    APPOINTMENT ||--o| MENTOR_FEEDBACK : "embeds"
+    APPOINTMENT ||--o{ MENTEE_FEEDBACK : "embeds"
+    APPOINTMENT ||--o{ MENTOR_FEEDBACK : "embeds"
 ```
 
 
