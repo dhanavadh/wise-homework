@@ -24,6 +24,5 @@ Our job in this issue is only in registration step. not including the email OTP 
 ## What we have to implement
 From the task, they want
 - Mentee Account Registration
-- Validation Rules
-- Password Rules
-- Successful Registration Outcome
+- Validation Rules & Password Rules >> Server/Client Checking
+- Successful Registration Outcome >> mentee account state
