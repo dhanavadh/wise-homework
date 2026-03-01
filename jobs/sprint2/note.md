@@ -7,15 +7,22 @@
 ## Constrain
 - Figma file for mentee is still "Ready for Review" state
 - This scope does not include email OTP verification itself (handled in the next story).
-- LINE binding, identity verification, profile setup, and document upload are not included in this story.
-- Invitation codes are not part of the registration process, nor student id
 
 ## Scope
 Our job in this issue is only in registration step. not including the email OTP verification. However, the mentor registration step is in "ready to dev" state.
+
 - [Figma Design File](https://www.figma.com/design/AOlg1BT2bc1Zt4TBtxWLOD/%F0%9F%8E%A8--WISE--Design-File?node-id=1-347)
 
 ![Scope of Work in Figma](./asset/img1.png)
 ![Mockup OTP Redirect](./asset/img3.png)
+
+>[!Note]
+>OTP page may be made up for mockup or just init layout. it's used for redirect after submit registration
+
+### Out of Scope
+
+- LINE binding, identity verification, profile setup, and document upload are not included in this story.
+- Invitation codes are not part of the registration process, nor student id
 
 ## Compare
 - Mentee has no invitation input
@@ -39,7 +46,7 @@ What we gonna do
 ## Issue Breakdown
 
 >[!Note]
->This is ai-generated content krub.
+>This is ai-generated content krub. it's different from what i created in project board.
 
 ```
 BE Issues (6)                              FE Issues (6)
