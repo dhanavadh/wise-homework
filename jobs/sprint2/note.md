@@ -45,8 +45,11 @@ What we gonna do
 
 ## Issue Breakdown
 
+Step to implement
+Domain (Entity/Interface) -> DTO -> Service -> Repository Impl -> Controller -> Module
+
 >[!Note]
->This is ai-generated content krub. it's different from what i created in project board.
+>This below content is ai-generated krub. it's different from what i created in project board.
 
 ```
 BE Issues (6)                              FE Issues (6)
